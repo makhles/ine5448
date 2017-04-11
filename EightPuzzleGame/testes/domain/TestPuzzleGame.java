@@ -78,4 +78,12 @@ public class TestPuzzleGame {
 		assertEquals(tiles.get(6), board.getTile(new Position(3,1)));
 		assertEquals(tiles.get(7), board.getTile(new Position(3,2)));
 	}
+
+	// ------------------------------------------------------------------------------------
+	// Testes de Fluxo de Controle
+	
+	@Test
+	public void testPutTilesInTheBoard() throws Exception {
+		
+	}
 }
