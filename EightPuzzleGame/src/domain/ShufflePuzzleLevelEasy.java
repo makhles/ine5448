@@ -29,5 +29,4 @@ public class ShufflePuzzleLevelEasy implements StrategyShufflePuzzle{
 			} while (!changed);
 		}
 	}
-
 }
