@@ -35,12 +35,10 @@ public final class RespostaDeInscricaoNoTorneio implements TipoResposta {
 		erro = false;
 	}
 	
-	@Override
 	public boolean possuiErro() {
 		return erro;
 	}
 
-	@Override
 	public String fornecerMensagemDeErro() {
 		return mensagemDeErro;
 	}

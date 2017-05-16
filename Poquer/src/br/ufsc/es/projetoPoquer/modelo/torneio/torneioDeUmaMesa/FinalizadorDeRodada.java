@@ -11,7 +11,6 @@ public class FinalizadorDeRodada implements Runnable {
 		this.rodada = rodada;
 	}
 
-	@Override
 	public synchronized void run() {
 		try {
 			rodada.join();

@@ -45,7 +45,6 @@ public final class TorneioDeUmaMesa implements TipoTorneio<TipoJogador> {
 		torneioFeijão.fixarValorDaEntrada(new ValorDaEntrada(configuração.fornecerEntrada().fornecerComoNúmero()));
 	}
 	
-	@Override
 	public boolean inscreverJogador(NomeDeUsuario nomeDeUsuário, TipoJogador jogador) {
 		if (jogadoresEmTorneio.contém(nomeDeUsuário)) {
 			return true;
@@ -72,7 +71,6 @@ public final class TorneioDeUmaMesa implements TipoTorneio<TipoJogador> {
 		iniciarTorneioSeNecessário();
 	}
 	
-	@Override
 	public boolean desinscreverJogador(NomeDeUsuario nomeDeUsuário) {
 		if (estadoDoTorneio.equals(EstadoDoTorneio.NÃO_INICIADO) && jogadoresEmTorneio.contém(nomeDeUsuário)) {
 			DinheiroFicticio dinheiroFictícioDevolvido = dinheiroFictício.removerDoMontante(configuração.fornecerEntrada().fornecerComoNúmero());
@@ -85,27 +83,22 @@ public final class TorneioDeUmaMesa implements TipoTorneio<TipoJogador> {
 		return false;
 	}
 
-	@Override
 	public boolean receberAumento(NomeDeUsuario nomeDeUsuário, Aposta aposta) {
 		return rodada.receberAumento(nomeDeUsuário, aposta);
 	}
 
-	@Override
 	public boolean receberDesistência(NomeDeUsuario nomeDeUsuário) {
 		return rodada.receberDesistência(nomeDeUsuário);
 	}
 	
-	@Override
 	public boolean receberPagamento(NomeDeUsuario nomeDeUsuário) {
 		return rodada.receberPagamento(nomeDeUsuário);
 	}
 	
-	@Override
 	public boolean receberPasso(NomeDeUsuario nomeDeUsuário) {
 		return rodada.receberPasso(nomeDeUsuário);
 	}
 
-	@Override
 	public TorneioFeijao fornecerTorneioFeijão() {
 		int quantidadeDeVagas = configuração.fornecerVagas().fornecerQuantidadeDeVagas();
 		int quantidadeDeVagasDisponíveis = quantidadeDeVagas-configuração.fornecerVagas().fornecerQuantidadeDeVagasOcupadas();
@@ -115,7 +108,6 @@ public final class TorneioDeUmaMesa implements TipoTorneio<TipoJogador> {
 		return torneioFeijão;
 	}
 	
-	@Override
 	public TorneioFeijaoCompleto fornecerTorneioFeijãoCompleto(NomeDeUsuario nomeDeUsuário) {
 		if (jogadoresEmTorneio.contém(nomeDeUsuário)) {
 			TorneioFeijaoCompleto torneioFeijãoCompleto = new TorneioFeijaoCompleto();
@@ -130,7 +122,6 @@ public final class TorneioDeUmaMesa implements TipoTorneio<TipoJogador> {
 		return null;
 	}
 	
-	@Override
 	public boolean torneioNaoTemInscritosENaoComeçou() {
 		return (jogadoresEmTorneio.fornecerQuantidade() == 0 && !estadoDoTorneio.equals(EstadoDoTorneio.INICIADO));
 	}

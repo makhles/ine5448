@@ -23,7 +23,6 @@ public class Mao implements Comparable<Mao> {
 		this.nomeDeUsuário = nomeDeUsuário;
 	}
 
-	@Override
 	public int compareTo(Mao outraMão) {
 		if (this.rankingDeMão.compareTo(outraMão.rankingDeMão) == ZERO) {
 			for (int i = NÚMERO_DE_CARTAS_NO_JOGO - 1; i >= ZERO; i--) {

@@ -16,29 +16,24 @@ public abstract class FilaColecaoMapaAbstrato<K, V, F> implements TipoColecaoMap
 		chavesDosValores = new LinkedList<K>();
 	}
 	
-	@Override
 	public final void adicionar(K chave, V valor) {
 		valores.put(chave, valor);
 		chavesDosValores.add(chave);
 	}
 
-	@Override
 	public final V pegar(K chave) {
 		return valores.get(chave);
 	}
 
-	@Override
 	public final boolean contém(K chave) {
 		return valores.containsKey(chave);
 	}
 
-	@Override
 	public final void remover(K chave) {
 		chavesDosValores.remove(valores.get(chave));
 		valores.remove(chave);
 	}
 
-	@Override
 	public final Queue<F> fornecerObjetosFeijão() {
 		return fornecerObjetosFeijãoConcreto(chavesDosValores);
 	}
@@ -71,12 +66,10 @@ public abstract class FilaColecaoMapaAbstrato<K, V, F> implements TipoColecaoMap
 		return chaveDoÚltimo;
 	}
 	
-	@Override
 	public Iterator<K> iterator() {
 		return chavesDosValores.iterator();
 	}
 	
-	@Override
 	public int fornecerQuantidade() {
 		return chavesDosValores.size();
 	}

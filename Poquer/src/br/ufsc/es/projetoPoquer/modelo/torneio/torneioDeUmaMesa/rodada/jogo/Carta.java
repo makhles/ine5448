@@ -53,7 +53,6 @@ public class Carta implements Comparable<Carta> {
 		return valor;
 	}
 
-	@Override
 	public int compareTo(Carta outraCarta) {
 		if (!valor.equals(Valor.ÁS) && outraCarta.valor.equals(Valor.ÁS)) {
 			return -1;

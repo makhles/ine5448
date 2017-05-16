@@ -44,7 +44,6 @@ public class ListaDeCartas implements Iterable<Carta> {
 		return cartas.size();
 	}
 	
-	@Override
 	public Iterator<Carta> iterator() {
 		return cartas.iterator();
 	}

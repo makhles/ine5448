@@ -10,7 +10,6 @@ public class ListaDeCartasIguais extends ArrayList<Carta> implements
 
 	private static final long serialVersionUID = 1L;
 
-	@Override
 	public int compareTo(ListaDeCartasIguais outraLista) {
 		if (size() < outraLista.size())
 			return -1;

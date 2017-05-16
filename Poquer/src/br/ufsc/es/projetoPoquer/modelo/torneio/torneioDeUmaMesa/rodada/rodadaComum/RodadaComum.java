@@ -56,7 +56,6 @@ public class RodadaComum implements TipoRodada {
 		estadoDaRodada = EstadoDaRodada.NÃO_INICIADA;
 	}
 	
-	@Override
 	public void run() {
 		for (NomeDeUsuario nomeDeUsuário : jogadoresEmRodada) {
 			JogadorEmRodadaComum jogadorEmRodada = jogadoresEmRodada.pegar(nomeDeUsuário);
@@ -71,12 +70,10 @@ public class RodadaComum implements TipoRodada {
 		mostrarShowdown();
 	}
 
-	@Override
 	public void receberJogadorEmRodada(NomeDeUsuario nomeDeUsuário, JogadorEmRodadaComum jogadorEmRodada) {
 		jogadoresEmRodada.adicionar(nomeDeUsuário, jogadorEmRodada);
 	}
 	
-	@Override
 	public RodadaFeijao fornecerRodadaFeijão() {
 		RodadaFeijao rodadaFeijão = new RodadaFeijao();
 		JogadorFeijao jogadorFeijãoDaVez = new JogadorFeijao();
@@ -92,7 +89,6 @@ public class RodadaComum implements TipoRodada {
 		return rodadaFeijão;
 	}
 	
-	@Override
 	public JogadorFeijaoEmRodada fornecerJogadorFeijãoEmRodada(NomeDeUsuario nomeDeUsuário) {
 		JogadorFeijaoEmRodada jogadorFeijãoEmRodada = new JogadorFeijaoEmRodada();
 		AcoesPossiveisFeijaoDoJogador açõesPossiveisFeijãoDoJogador = new AcoesPossiveisFeijaoDoJogador();
@@ -329,7 +325,6 @@ public class RodadaComum implements TipoRodada {
 				nomeDeUsuário.equals(jogadoresEmRodada.verPrimeiro());
 	}
 	
-	@Override
 	public synchronized boolean receberAumento(NomeDeUsuario nomeDeUsuário, Aposta aposta) {
 		Jogada jogadaDesejada = new Jogada(AcaoDoJogador.AUMENTAR, aposta, nomeDeUsuário);
 		if (jogadorExisteEEstáNaVez(nomeDeUsuário) && 
@@ -346,7 +341,6 @@ public class RodadaComum implements TipoRodada {
 		return false;
 	}
 
-	@Override
 	public synchronized boolean receberDesistência(NomeDeUsuario nomeDeUsuário) {
 		Jogada jogadaDesejada = new Jogada(AcaoDoJogador.DESISTIR, new Aposta(), nomeDeUsuário);
 		if (jogadorExisteEEstáNaVez(nomeDeUsuário) && 
@@ -362,7 +356,6 @@ public class RodadaComum implements TipoRodada {
 		return false;
 	}
 	
-	@Override
 	public synchronized boolean receberPagamento(NomeDeUsuario nomeDeUsuário) {
 		Jogada jogadaDesejada = new Jogada(AcaoDoJogador.PAGAR, new Aposta(açõesPossíveisDoJogador.fornecerApostaMínimaComoNúmero()), nomeDeUsuário);
 		if (jogadorExisteEEstáNaVez(nomeDeUsuário) && 
@@ -378,7 +371,6 @@ public class RodadaComum implements TipoRodada {
 		return false;
 	}
 	
-	@Override
 	public synchronized boolean receberPasso(NomeDeUsuario nomeDeUsuário) {
 		Jogada jogadaDesejada = new Jogada(AcaoDoJogador.PASSAR, new Aposta(açõesPossíveisDoJogador.fornecerApostaMínimaComoNúmero()), nomeDeUsuário);
 		if (jogadorExisteEEstáNaVez(nomeDeUsuário) && 

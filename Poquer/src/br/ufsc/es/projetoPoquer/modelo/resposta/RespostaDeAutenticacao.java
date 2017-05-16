@@ -32,12 +32,10 @@ public final class RespostaDeAutenticacao implements TipoResposta {
 		return new RespostaDeAutenticacao(SENHA_INVÁLIDA);
 	}
 
-	@Override
 	public boolean possuiErro() {
 		return erro;
 	}
 	
-	@Override
 	public String fornecerMensagemDeErro() {
 		return mensagemDeErro;
 	}

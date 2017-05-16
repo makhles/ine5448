@@ -17,7 +17,7 @@ public class TesteAnalisadorDeJogo {
 
 	@Test
 	public void parDeAs() throws Exception {
-		List<Carta> parDeAs = new ArrayList<>();
+		List<Carta> parDeAs = new ArrayList<Carta>();
 		parDeAs.add(new Carta(Valor.ÁS, Naipe.ESPADAS));
 		parDeAs.add(new Carta(Valor.ÁS, Naipe.COPAS));
 		parDeAs.add(new Carta(Valor.CINCO, Naipe.PAUS));
