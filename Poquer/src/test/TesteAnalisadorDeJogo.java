@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
@@ -28,4 +29,9 @@ public class TesteAnalisadorDeJogo {
 		assertEquals(RankingDeMao.PAR, AnalisadorDeJogos.fornecerInstância().fornecerJogo(parDeAs));
 	}
 
+	@Test
+	public void testaRoyalFlush() throws Exception {
+		List<Carta> cartas = new ArrayList<Carta>();
+		cartas.add(new Carta(Valor.ÁS, Naipe.COPAS));
+	}
 }
