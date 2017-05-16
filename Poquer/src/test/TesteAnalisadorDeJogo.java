@@ -32,6 +32,11 @@ public class TesteAnalisadorDeJogo {
 	@Test
 	public void testaRoyalFlush() throws Exception {
 		List<Carta> cartas = new ArrayList<Carta>();
+		cartas.add(new Carta(Valor.DEZ, Naipe.COPAS));
+		cartas.add(new Carta(Valor.VALETE, Naipe.COPAS));
+		cartas.add(new Carta(Valor.DAMA, Naipe.COPAS));
+		cartas.add(new Carta(Valor.REI, Naipe.COPAS));
 		cartas.add(new Carta(Valor.ÁS, Naipe.COPAS));
+		assertEquals(RankingDeMao.ROYAL_FLUSH, AnalisadorDeJogos.fornecerInstância().fornecerJogo(cartas));
 	}
 }
