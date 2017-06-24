@@ -1,0 +1,478 @@
+Buildfile: /home/odin/workspace/ine5448/scova/build/build.xml
+     [echo] ../bin;../deps/asm-debug-all-4.1.jar;../deps/commons-io-2.4.jar;../deps/junit-4.10.jar;C:/Users/Aniceto/workspace/junit_original/lib/hamcrest-core-1.3.jar
+     [echo] {project.output.classpath}: 
+     [echo] /home/odin/workspace/ine5488/EightPuzzleGame/scova
+     [echo] {project.input.classpath}: 
+     [echo] /home/odin/workspace/ine5448/EightPuzzleGame/bin:/home/odin/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar:/home/odin/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar
+     [echo] {project.input.folder}: 
+     [echo] /home/odin/workspace/ine5448/EightPuzzleGame/bin
+     [echo] {project.output.folder}: 
+     [echo] /home/odin/workspace/ine5448/EightPuzzleGame/scova
+     [echo] {test.home}: 
+     [echo] /home/odin/workspace/ine5448/EightPuzzleGame/testes
+clean:
+   [delete] Deleting directory /home/odin/workspace/ine5448/scova/bin
+    [mkdir] Created dir: /home/odin/workspace/ine5448/scova/bin
+compile-lib:
+    [javac] /home/odin/workspace/ine5448/scova/build/build.xml:8: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+compile:
+    [javac] /home/odin/workspace/ine5448/scova/build/build.xml:17: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 19 source files to /home/odin/workspace/ine5448/scova/bin
+    [javac] Note: /home/odin/workspace/ine5448/scova/src/test/java/org/scova/instrumenter/RunSampleClassInstrumented.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /home/odin/workspace/ine5448/scova/src/test/java/org/scova/instrumenter/RunSampleClassInstrumented.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+instrument-all:
+     [java] Usage: sc [input_folder] [output_folder]
+     [java] Input folder: /home/odin/workspace/ine5448/EightPuzzleGame/bin
+     [java] Output folder: /home/odin/workspace/ine5448/EightPuzzleGame/scova
+     [java] deleting folder /home/odin/workspace/ine5448/EightPuzzleGame/scova
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/exceptions/ExceptionInvalidPosition.class
+     [java] Analysing method <init>
+     [java] Analysing method <init>
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/Board.class
+     [java] Analysing method <init>
+     [java] Generate ClearDependenciesOf: domain/Board.line
+     [java] PUTFIELD found for field domain/Board.<init>(II)V.line
+     [java] Generate ClearDependenciesOf: domain/Board.column
+     [java] PUTFIELD found for field domain/Board.<init>(II)V.column
+     [java] Generate ClearDependenciesOf: domain/Board.grid
+     [java] Analysing method initializeAllCells
+     [java] Generate ClearDependenciesOf: domain/Board.initializeAllCells()V.i
+     [java] Generate ClearDependenciesOf: domain/Board.initializeAllCells()V.j
+     [java] Analysing method putTile
+     [java] Analysing method getTile
+     [java] Generate ClearDependenciesOf: domain/Board.getTile(Ldomain/Position;)Ldomain/Tile;
+     [java] Generate ClearDependenciesOf: domain/Board.getTile(Ldomain/Position;)Ldomain/Tile;
+     [java] Analysing method isAdjacent
+     [java] Generate ClearDependenciesOf: domain/Board.isAdjacent(Ldomain/Position;Ldomain/Position;)Z
+     [java] Analysing method changeTilesInPositions
+     [java] Generate ClearDependenciesOf: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell1
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell1 <- domain/Grid.get(II)Ljava/lang/Object;
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell1 <- domain/Board.grid
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell1 <- domain/Position.getLine()I
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell1 <- domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.position1
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell1 <- domain/Position.getColumn()I
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell1 <- domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.position1
+     [java] Generate ClearDependenciesOf: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell2
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell2 <- domain/Grid.get(II)Ljava/lang/Object;
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell2 <- domain/Board.grid
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell2 <- domain/Position.getLine()I
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell2 <- domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.position2
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell2 <- domain/Position.getColumn()I
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell2 <- domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.position2
+     [java] Generate ClearDependenciesOf: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.aux
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.aux <- domain/Cell.getTile()Ldomain/Tile;
+     [java] Found dependency: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.aux <- domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z.cell1
+     [java] Generate ClearDependenciesOf: domain/Board.changeTilesInPositions(Ldomain/Position;Ldomain/Position;)Z
+     [java] Analysing method isInTheSuperiorBorder
+     [java] Generate ClearDependenciesOf: domain/Board.isInTheSuperiorBorder(Ldomain/Position;)Z
+     [java] Analysing method isInTheBottomBorder
+     [java] Generate ClearDependenciesOf: domain/Board.isInTheBottomBorder(Ldomain/Position;)Z
+     [java] Generate ClearDependenciesOf: domain/Board.isInTheBottomBorder(Ldomain/Position;)Z
+     [java] Analysing method isInTheLeftBorder
+     [java] Generate ClearDependenciesOf: domain/Board.isInTheLeftBorder(Ldomain/Position;)Z
+     [java] Analysing method isInTheRightBorder
+     [java] Generate ClearDependenciesOf: domain/Board.isInTheRightBorder(Ldomain/Position;)Z
+     [java] Generate ClearDependenciesOf: domain/Board.isInTheRightBorder(Ldomain/Position;)Z
+     [java] Analysing method isInsideTheBoard
+     [java] Generate ClearDependenciesOf: domain/Board.isInsideTheBoard(Ldomain/Position;)Z
+     [java] Generate ClearDependenciesOf: domain/Board.isInsideTheBoard(Ldomain/Position;)Z
+     [java] Analysing method equals
+     [java] Generate ClearDependenciesOf: domain/Board.equals(Ljava/lang/Object;)Z
+     [java] Generate ClearDependenciesOf: domain/Board.equals(Ljava/lang/Object;)Z.i
+     [java] Generate ClearDependenciesOf: domain/Board.equals(Ljava/lang/Object;)Z.j
+     [java] Generate ClearDependenciesOf: domain/Board.equals(Ljava/lang/Object;)Z
+     [java] Generate ClearDependenciesOf: domain/Board.equals(Ljava/lang/Object;)Z
+     [java] Analysing method toString
+     [java] Generate ClearDependenciesOf: domain/Board.toString()Ljava/lang/String;.result
+     [java] Generate ClearDependenciesOf: domain/Board.toString()Ljava/lang/String;.i
+     [java] Generate ClearDependenciesOf: domain/Board.toString()Ljava/lang/String;.j
+     [java] Generate ClearDependenciesOf: domain/Board.toString()Ljava/lang/String;.cell
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.cell <- domain/Grid.get(II)Ljava/lang/Object;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.cell <- domain/Board.grid
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.cell <- domain/Board.toString()Ljava/lang/String;.i
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.cell <- domain/Board.toString()Ljava/lang/String;.j
+     [java] Generate ClearDependenciesOf: domain/Board.toString()Ljava/lang/String;.result
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.toString()Ljava/lang/String;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- domain/Board.toString()Ljava/lang/String;.i
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- domain/Board.toString()Ljava/lang/String;.j
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- domain/Cell.toString()Ljava/lang/String;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- domain/Board.toString()Ljava/lang/String;.cell
+     [java] Generate ClearDependenciesOf: domain/Board.toString()Ljava/lang/String;.result
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.toString()Ljava/lang/String;
+     [java] Found dependency: domain/Board.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Generate ClearDependenciesOf: domain/Board.toString()Ljava/lang/String;
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/Tile.class
+     [java] Analysing method <init>
+     [java] Generate ClearDependenciesOf: domain/Tile.number
+     [java] PUTFIELD found for field domain/Tile.<init>(I)V.number
+     [java] Generate ClearDependenciesOf: domain/Tile.hash
+     [java] PUTFIELD found for field java/lang/Integer.hashCode()I
+     [java] Analysing method getNumber
+     [java] Generate ClearDependenciesOf: domain/Tile.getNumber()I
+     [java] Analysing method biggerThan
+     [java] Generate ClearDependenciesOf: domain/Tile.biggerThan(Ldomain/Tile;)Z
+     [java] Generate ClearDependenciesOf: domain/Tile.biggerThan(Ldomain/Tile;)Z
+     [java] Analysing method equals
+     [java] Generate ClearDependenciesOf: domain/Tile.equals(Ljava/lang/Object;)Z
+     [java] Generate ClearDependenciesOf: domain/Tile.equals(Ljava/lang/Object;)Z
+     [java] Analysing method hashCode
+     [java] Generate ClearDependenciesOf: domain/Tile.hashCode()I
+     [java] Analysing method toString
+     [java] Generate ClearDependenciesOf: domain/Tile.toString()Ljava/lang/String;
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/ShufflePuzzleNoLevel.class
+     [java] Analysing method <init>
+     [java] Analysing method shuffle
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/SquareBoard.class
+     [java] Analysing method <init>
+     [java] Generate ClearDependenciesOf: domain/SquareBoard.dimension
+     [java] PUTFIELD found for field domain/SquareBoard.<init>(I)V.dimension
+     [java] Analysing method getDimension
+     [java] Generate ClearDependenciesOf: domain/SquareBoard.getDimension()I
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/PuzzleGame.class
+     [java] Analysing method <init>
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.boardWithFinalState
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.board
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.positionsOfTiles
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.<init>(ILdomain/StrategyShufflePuzzle;)V.listOfTiles
+     [java] Found dependency: domain/PuzzleGame.<init>(ILdomain/StrategyShufflePuzzle;)V.listOfTiles <- domain/PuzzleGame.generateListOfTiles(I)Ljava/util/List;
+     [java] Found dependency: domain/PuzzleGame.<init>(ILdomain/StrategyShufflePuzzle;)V.listOfTiles <- domain/PuzzleGame.<init>(ILdomain/StrategyShufflePuzzle;)V.this
+     [java] Found dependency: domain/PuzzleGame.<init>(ILdomain/StrategyShufflePuzzle;)V.listOfTiles <- domain/PuzzleGame.<init>(ILdomain/StrategyShufflePuzzle;)V.dimension
+     [java] Found dependency: domain/PuzzleGame.<init>(ILdomain/StrategyShufflePuzzle;)V.listOfTiles <- domain/PuzzleGame.<init>(ILdomain/StrategyShufflePuzzle;)V.dimension
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.emptyCell
+     [java] Analysing method putTilesInTheBoard
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.tilesListIterator
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.tilesListIterator <- java/util/List.iterator()Ljava/util/Iterator;
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.tilesListIterator <- domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.list
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.line
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.column
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.tile
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.tile <- java/util/Iterator.next()Ljava/lang/Object;
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.tile <- domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.tilesListIterator
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.position
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.line
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.column
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.column <- java/util/Iterator.next()Ljava/lang/Object;
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.column <- domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.tilesListIterator
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheBoard(Ldomain/SquareBoard;Ljava/util/List;)V.tile
+     [java] Analysing method putTilesInTheMapOfPositions
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.tilesListIterator
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.tilesListIterator <- java/util/List.iterator()Ljava/util/Iterator;
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.tilesListIterator <- domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.list
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.line
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.column
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.tile
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.tile <- java/util/Iterator.next()Ljava/lang/Object;
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.tile <- domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.tilesListIterator
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.position
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.line
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.column
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.column <- java/util/Iterator.next()Ljava/lang/Object;
+     [java] Found dependency: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.column <- domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.tilesListIterator
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.putTilesInTheMapOfPositions(Ljava/util/Map;Ljava/util/List;I)V.tile
+     [java] Analysing method generateListOfTiles
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.generateListOfTiles(I)Ljava/util/List;.listOfTiles
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.generateListOfTiles(I)Ljava/util/List;.i
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.generateListOfTiles(I)Ljava/util/List;
+     [java] Analysing method moveTile
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveTile(I)V.tilePosition
+     [java] Found dependency: domain/PuzzleGame.moveTile(I)V.tilePosition <- domain/PuzzleGame.positionsOfTiles
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.emptyCell
+     [java] PUTFIELD found for field domain/PuzzleGame.moveTile(I)V.tilePosition
+     [java] Analysing method moveTile
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveTile(II)V.posicaoPeca
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveTile(II)V.peca
+     [java] Found dependency: domain/PuzzleGame.moveTile(II)V.peca <- domain/SquareBoard.getTile(Ldomain/Position;)Ldomain/Tile;
+     [java] Found dependency: domain/PuzzleGame.moveTile(II)V.peca <- domain/PuzzleGame.board
+     [java] Found dependency: domain/PuzzleGame.moveTile(II)V.peca <- domain/PuzzleGame.moveTile(II)V.posicaoPeca
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.emptyCell
+     [java] PUTFIELD found for field domain/PuzzleGame.moveTile(II)V.posicaoPeca
+     [java] Analysing method moveEmptyCell
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Analysing method moveDown
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveDown()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveDown()Z.tile
+     [java] Found dependency: domain/PuzzleGame.moveDown()Z.tile <- domain/SquareBoard.getTile(Ldomain/Position;)Ldomain/Tile;
+     [java] Found dependency: domain/PuzzleGame.moveDown()Z.tile <- domain/PuzzleGame.board
+     [java] Found dependency: domain/PuzzleGame.moveDown()Z.tile <- domain/PuzzleGame.moveDown()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveDown()Z.hidden3
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.emptyCell
+     [java] PUTFIELD found for field domain/PuzzleGame.moveDown()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveDown()Z
+     [java] Analysing method moveUp
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveUp()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveUp()Z.tile
+     [java] Found dependency: domain/PuzzleGame.moveUp()Z.tile <- domain/SquareBoard.getTile(Ldomain/Position;)Ldomain/Tile;
+     [java] Found dependency: domain/PuzzleGame.moveUp()Z.tile <- domain/PuzzleGame.board
+     [java] Found dependency: domain/PuzzleGame.moveUp()Z.tile <- domain/PuzzleGame.moveUp()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveUp()Z.hidden3
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.emptyCell
+     [java] PUTFIELD found for field domain/PuzzleGame.moveUp()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveUp()Z
+     [java] Analysing method moveRight
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveRight()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveRight()Z.tile
+     [java] Found dependency: domain/PuzzleGame.moveRight()Z.tile <- domain/SquareBoard.getTile(Ldomain/Position;)Ldomain/Tile;
+     [java] Found dependency: domain/PuzzleGame.moveRight()Z.tile <- domain/PuzzleGame.board
+     [java] Found dependency: domain/PuzzleGame.moveRight()Z.tile <- domain/PuzzleGame.moveRight()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveRight()Z.hidden3
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.emptyCell
+     [java] PUTFIELD found for field domain/PuzzleGame.moveRight()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveRight()Z
+     [java] Analysing method moveLeft
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveLeft()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveLeft()Z.tile
+     [java] Found dependency: domain/PuzzleGame.moveLeft()Z.tile <- domain/SquareBoard.getTile(Ldomain/Position;)Ldomain/Tile;
+     [java] Found dependency: domain/PuzzleGame.moveLeft()Z.tile <- domain/PuzzleGame.board
+     [java] Found dependency: domain/PuzzleGame.moveLeft()Z.tile <- domain/PuzzleGame.moveLeft()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveLeft()Z.hidden3
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.emptyCell
+     [java] PUTFIELD found for field domain/PuzzleGame.moveLeft()Z.tilePosition
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.moveLeft()Z
+     [java] Analysing method endOfTheGame
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.endOfTheGame()Z
+     [java] Analysing method toString
+     [java] Generate ClearDependenciesOf: domain/PuzzleGame.toString()Ljava/lang/String;
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/Cell.class
+     [java] Analysing method <init>
+     [java] Analysing method putTile
+     [java] Generate ClearDependenciesOf: domain/Cell.tile
+     [java] PUTFIELD found for field domain/Cell.putTile(Ldomain/Tile;)V.tile
+     [java] Analysing method removeTile
+     [java] Generate ClearDependenciesOf: domain/Cell.removeTile()Ldomain/Tile;.aux
+     [java] Found dependency: domain/Cell.removeTile()Ldomain/Tile;.aux <- domain/Cell.tile
+     [java] Generate ClearDependenciesOf: domain/Cell.tile
+     [java] Generate ClearDependenciesOf: domain/Cell.removeTile()Ldomain/Tile;
+     [java] Analysing method getTile
+     [java] Generate ClearDependenciesOf: domain/Cell.getTile()Ldomain/Tile;
+     [java] Analysing method equals
+     [java] Generate ClearDependenciesOf: domain/Cell.equals(Ljava/lang/Object;)Z
+     [java] Generate ClearDependenciesOf: domain/Cell.equals(Ljava/lang/Object;)Z
+     [java] Generate ClearDependenciesOf: domain/Cell.equals(Ljava/lang/Object;)Z
+     [java] Analysing method toString
+     [java] Generate ClearDependenciesOf: domain/Cell.toString()Ljava/lang/String;
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/TestPuzzleGame.class
+     [java] Analysing method <init>
+     [java] Analysing method setup
+     [java] Generate ClearDependenciesOf: domain/TestPuzzleGame.dimension
+     [java] Generate ClearDependenciesOf: domain/TestPuzzleGame.game
+     [java] Generate ClearDependenciesOf: domain/TestPuzzleGame.board
+     [java] Generate ClearDependenciesOf: domain/TestPuzzleGame.tiles
+     [java] PUTFIELD found for field domain/PuzzleGame.generateListOfTiles(I)Ljava/util/List;
+     [java] PUTFIELD found for field domain/TestPuzzleGame.game
+     [java] PUTFIELD found for field domain/TestPuzzleGame.dimension
+     [java] PUTFIELD found for field domain/TestPuzzleGame.dimension
+     [java] Analysing method testNotNullTilesGeneration
+     [java] Found assert : assertNotNull
+     [java] Analysing method testTilesGeneration
+     [java] Found assert : assertEquals
+     [java] Analysing method testNullSquareBoard
+     [java] Analysing method testNullListOfTiles
+     [java] Generate ClearDependenciesOf: domain/TestPuzzleGame.testNullListOfTiles()V.tiles
+     [java] Analysing method testTilesInPositions
+     [java] Found assert : assertEquals
+     [java] Found assert : assertEquals
+     [java] Found assert : assertEquals
+     [java] Found assert : assertEquals
+     [java] Found assert : assertEquals
+     [java] Found assert : assertEquals
+     [java] Found assert : assertEquals
+     [java] Found assert : assertEquals
+     [java] Analysing method testMoveEmptyCellWithNullDirection
+     [java] Found assert : assertFalse
+     [java] Analysing method testMoveEmptyCellNull
+     [java] Analysing method testMoveEmptyCellDown
+     [java] Found assert : assertTrue
+     [java] Analysing method testMoveEmptyCellDownFromSuperiorBorder
+     [java] Found assert : assertFalse
+     [java] Analysing method testMoveEmptyCellUp
+     [java] Found assert : assertTrue
+     [java] Analysing method testMoveEmptyCellUpFromBottomBorder
+     [java] Found assert : assertFalse
+     [java] Analysing method testMoveEmptyCellRight
+     [java] Found assert : assertTrue
+     [java] Analysing method testMoveEmptyCellRightFromLeftBorder
+     [java] Found assert : assertFalse
+     [java] Analysing method testMoveEmptyCellLeft
+     [java] Found assert : assertTrue
+     [java] Analysing method testMoveEmptyCellLeftFromRightBorder
+     [java] Found assert : assertFalse
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/Grid.class
+     [java] Analysing method <init>
+     [java] Generate ClearDependenciesOf: domain/Grid.numberOfLines
+     [java] PUTFIELD found for field domain/Grid.<init>(II)V.numberOfLines
+     [java] Generate ClearDependenciesOf: domain/Grid.numberOfColumns
+     [java] PUTFIELD found for field domain/Grid.<init>(II)V.numberOfColumns
+     [java] Generate ClearDependenciesOf: domain/Grid.matrix
+     [java] Analysing method put
+     [java] Analysing method get
+     [java] Generate ClearDependenciesOf: domain/Grid.get(II)Ljava/lang/Object;
+     [java] Generate ClearDependenciesOf: domain/Grid.get(II)Ljava/lang/Object;
+     [java] Analysing method toString
+     [java] Generate ClearDependenciesOf: domain/Grid.toString()Ljava/lang/String;.result
+     [java] Generate ClearDependenciesOf: domain/Grid.toString()Ljava/lang/String;.i
+     [java] Generate ClearDependenciesOf: domain/Grid.toString()Ljava/lang/String;.j
+     [java] Generate ClearDependenciesOf: domain/Grid.toString()Ljava/lang/String;.result
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.toString()Ljava/lang/String;
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- domain/Grid.toString()Ljava/lang/String;.i
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- domain/Grid.toString()Ljava/lang/String;.j
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- domain/Grid.matrix
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- domain/Grid.toString()Ljava/lang/String;.i
+     [java] Found dependency: domain/Grid.toString()Ljava/lang/String;.result <- domain/Grid.toString()Ljava/lang/String;.j
+     [java] Generate ClearDependenciesOf: domain/Grid.toString()Ljava/lang/String;
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/Puzzle$Direction.class
+     [java] Analysing method <clinit>
+     [java] Analysing method <init>
+     [java] Analysing method values
+     [java] Generate ClearDependenciesOf: domain/Puzzle$Direction.values()[Ldomain/Puzzle$Direction;.hidden0
+     [java] Generate ClearDependenciesOf: domain/Puzzle$Direction.values()[Ldomain/Puzzle$Direction;.hidden1
+     [java] Generate ClearDependenciesOf: domain/Puzzle$Direction.values()[Ldomain/Puzzle$Direction;.hidden2
+     [java] Generate ClearDependenciesOf: domain/Puzzle$Direction.values()[Ldomain/Puzzle$Direction;
+     [java] Analysing method valueOf
+     [java] Generate ClearDependenciesOf: domain/Puzzle$Direction.valueOf(Ljava/lang/String;)Ldomain/Puzzle$Direction;
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/ShufflePuzzleLevelMedium.class
+     [java] Analysing method <init>
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelMedium.numberOfShuffles
+     [java] Analysing method shuffle
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.generateRandom
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.i
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.direction
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.direction <- java/util/Random.nextInt(I)I
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.direction <- domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.generateRandom
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- RIGHT
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- LEFT
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- DOWN
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelMedium.shuffle(Ldomain/Puzzle;)V.changed <- UP
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/Puzzle.class
+     [java] Analysing method moveEmptyCell
+     [java] Analysing method moveTile
+     [java] Analysing method moveTile
+     [java] Analysing method endOfTheGame
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/StrategyShufflePuzzle.class
+     [java] Analysing method shuffle
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/ShufflePuzzleLevelEasy.class
+     [java] Analysing method <init>
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelEasy.numberOfShuffles
+     [java] Analysing method shuffle
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.generateRandom
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.i
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.direction
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.direction <- java/util/Random.nextInt(I)I
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.direction <- domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.generateRandom
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- RIGHT
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- LEFT
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- DOWN
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelEasy.shuffle(Ldomain/Puzzle;)V.changed <- UP
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/FactoryStrategyShufflePuzzle.class
+     [java] Analysing method <clinit>
+     [java] Analysing method <init>
+     [java] Analysing method getInstance
+     [java] Generate ClearDependenciesOf: domain/FactoryStrategyShufflePuzzle.getInstance()Ldomain/FactoryStrategyShufflePuzzle;
+     [java] Analysing method pegaEstrategia
+     [java] Generate ClearDependenciesOf: domain/FactoryStrategyShufflePuzzle.pegaEstrategia(Ldomain/DifficultyLevel;)Ldomain/StrategyShufflePuzzle;.e
+     [java] Generate ClearDependenciesOf: domain/FactoryStrategyShufflePuzzle.pegaEstrategia(Ldomain/DifficultyLevel;)Ldomain/StrategyShufflePuzzle;
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/ShufflePuzzleLevelHard.class
+     [java] Analysing method <init>
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelHard.numberOfShuffles
+     [java] Analysing method shuffle
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.generateRandom
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.i
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.direction
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.direction <- java/util/Random.nextInt(I)I
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.direction <- domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.generateRandom
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- RIGHT
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- LEFT
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- DOWN
+     [java] Generate ClearDependenciesOf: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- domain/Puzzle.moveEmptyCell(Ldomain/Puzzle$Direction;)Z
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.game
+     [java] Found dependency: domain/ShufflePuzzleLevelHard.shuffle(Ldomain/Puzzle;)V.changed <- UP
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/Position.class
+     [java] Analysing method <init>
+     [java] Generate ClearDependenciesOf: domain/Position.line
+     [java] PUTFIELD found for field domain/Position.<init>(II)V.line
+     [java] Generate ClearDependenciesOf: domain/Position.column
+     [java] PUTFIELD found for field domain/Position.<init>(II)V.column
+     [java] Analysing method getLine
+     [java] Generate ClearDependenciesOf: domain/Position.getLine()I
+     [java] Analysing method getColumn
+     [java] Generate ClearDependenciesOf: domain/Position.getColumn()I
+     [java] BEGINNING INSTRUMENTATION OF /home/odin/workspace/ine5448/EightPuzzleGame/bin/domain/DifficultyLevel.class
+     [java] Analysing method <clinit>
+     [java] Analysing method <init>
+     [java] Analysing method values
+     [java] Generate ClearDependenciesOf: domain/DifficultyLevel.values()[Ldomain/DifficultyLevel;.hidden0
+     [java] Generate ClearDependenciesOf: domain/DifficultyLevel.values()[Ldomain/DifficultyLevel;.hidden1
+     [java] Generate ClearDependenciesOf: domain/DifficultyLevel.values()[Ldomain/DifficultyLevel;.hidden2
+     [java] Generate ClearDependenciesOf: domain/DifficultyLevel.values()[Ldomain/DifficultyLevel;
+     [java] Analysing method valueOf
+     [java] Generate ClearDependenciesOf: domain/DifficultyLevel.valueOf(Ljava/lang/String;)Ldomain/DifficultyLevel;
+run-batch:
+    [junit] Running domain.TestPuzzleGame
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Test domain.TestPuzzleGame FAILED
+report:
+     [java] Usage: HtmlReport <reportFolder>
+     [java] Reporting to /home/odin/workspace/ine5448/EightPuzzleGame/scova
+     [java] Html report generated at /home/odin/workspace/ine5448/EightPuzzleGame/scova/report.html
+all-report:
+BUILD SUCCESSFUL
+Total time: 11 seconds
+
