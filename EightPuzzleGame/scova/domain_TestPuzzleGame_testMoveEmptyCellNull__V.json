@@ -1,0 +1,10 @@
+{
+  "test_name": "domain/TestPuzzleGame.testMoveEmptyCellNull()V",
+  "modified_states": "3",
+  "covered_states": "0",
+  "useless_covered_states": "0",
+  "modified":  [ "domain/Position.column", "domain/Position.line", "domain/Cell.tile" ],
+  "covered":  [  ],
+  "useless":  [  ],
+  "state_coverage": "0.0"
+}

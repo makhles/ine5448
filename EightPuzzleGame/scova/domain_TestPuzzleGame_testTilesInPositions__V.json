@@ -1,0 +1,10 @@
+{
+  "test_name": "domain/TestPuzzleGame.testTilesInPositions()V",
+  "modified_states": "3",
+  "covered_states": "0",
+  "useless_covered_states": "2",
+  "modified":  [ "domain/Position.column", "domain/Position.line", "domain/Cell.tile" ],
+  "covered":  [  ],
+  "useless":  [ "domain/TestPuzzleGame.tiles", "domain/TestPuzzleGame.board" ],
+  "state_coverage": "0.0"
+}
